@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="400.0" style="-fx-background-color: #152642;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPage.Controller1">
+   <children>
+      <AnchorPane layoutY="90.0" prefHeight="206.0" prefWidth="400.0" style="-fx-background-color: #2F4562; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="14.0" prefHeight="47.0" prefWidth="293.0" text="Jason Lee Hong Jie" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="pointLabel" layoutX="14.0" layoutY="39.0" prefHeight="46.0" prefWidth="164.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="39.0" />
+               </font>
+            </Label>
+            <Label layoutX="185.0" layoutY="53.0" text="points" textFill="WHITE" />
+            <HBox alignment="CENTER" layoutX="7.0" layoutY="93.0" prefHeight="113.0" prefWidth="389.0" style="-fx-background-color: #2F4562; -fx-background-radius: 20;">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="43.0" prefWidth="95.0" style="-fx-border-color: white; -fx-border-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@recycle.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="97.0">
+                           <children>
+                              <Label text="points:" textFill="WHITE" />
+                              <Label text=" +10" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Light" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@toteBag.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="97.0">
+                           <children>
+                              <Label text="points:" textFill="WHITE" />
+                              <Label text=" +20" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Light" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@cup.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="97.0">
+                           <children>
+                              <Label text="points:" textFill="WHITE" />
+                              <Label text=" +20" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Light" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white; -fx-border-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@bowl.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="97.0">
+                           <children>
+                              <Label text="points:" textFill="WHITE" />
+                              <Label text=" +30" textFill="WHITE">
+                                 <font>
+                                    <Font name="Calibri Light" size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Label layoutX="290.0" layoutY="25.0" opacity="0.71" prefHeight="38.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@menu.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="BASELINE_CENTER" layoutY="546.0" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #282828;">
+         <children>
+            <VBox fx:id="homePane" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="homeImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Home.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="homeLabel" text="Main Page" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="redeemPane" onMouseClicked="#mouseClick" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="redeemImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Gift.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="redeemLabel" text="Redeem" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="storePane" onMouseClicked="#mouseClick" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="storeImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Shop.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="storeLabel" text="Store" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="mePane" onMouseClicked="#mouseClick" onMouseEntered="#enter" onMouseExited="#exit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="meImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Setting.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="meLabel" text="Me" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <ImageView fx:id="qr" fitHeight="158.0" fitWidth="164.0" layoutX="123.0" layoutY="341.0" onMouseExited="#mouseExit" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@qr.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="button" contentDisplay="BOTTOM" layoutX="120.0" layoutY="363.0" onAction="#showqr" prefHeight="113.0" prefWidth="164.0" ripplerFill="#c3b6b6" style="-fx-background-color: rgba(255,255,255,0.1);" text="SHOW QR" textFill="#e1cfcf" viewOrder="1.0">
+         <font>
+            <Font name="Century Gothic Bold" size="26.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="54.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@showqr.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
