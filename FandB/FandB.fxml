@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="367.0" style="-fx-background-color: linear-gradient(#141e30, #243b55);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FandB.FandBController">
+    <children>
+        <Label layoutX="290.0" layoutY="29.0" opacity="0.71" prefHeight="47.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic Bold" size="39.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="142.0" text="Moonbucks Coffee" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="485.0" text=" Location: LG-01" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="107.0" fitWidth="116.0" layoutX="20.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@moonbucks.PNG" />
+            </image>
+        </ImageView>
+        <Label layoutX="17.0" layoutY="505.0" text=" Phone: 03-80118800" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="315.0" text=" Opening hours: 10am – 10pm" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="345.0" text="McWonald's" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="116.0" fitWidth="108.0" layoutX="24.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@mcd.PNG" />
+            </image>
+        </ImageView>
+        <Label layoutX="16.0" layoutY="277.0" prefWidth="138.0" text=" Location: LG-23" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="296.0" text=" Phone: 03-56738178" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="525.0" prefHeight="20.0" prefWidth="222.0" text=" Opening hours: 8am - 10pm" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <HBox alignment="BASELINE_CENTER" layoutX="-1.0" layoutY="556.0" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #282828;">
+         <children>
+            <VBox fx:id="homePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="homeImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Directory/home.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="homeLabel" text="Main Page" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="redeemPane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="redeemImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Directory/Gift.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="redeemLabel" text="Redeem" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="storePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="storeImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../Directory/Shop.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="storeLabel" text="Store" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="mePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="meImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../Directory/Setting.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="meLabel" text="Me" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <ImageView fx:id="backButton" fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="32.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="367.0" style="-fx-background-color: linear-gradient(#141e30, #243b55);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fashion.FashionController">
+    <children>
+        <VBox fx:id="homePane" layoutY="545.0" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+            <children>
+                <ImageView fx:id="homeImage" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@home.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="homeLabel" text="Main Page" textFill="#676767">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+            </children>
+        </VBox>
+        <VBox fx:id="storePane" layoutX="198.0" layoutY="545.0" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+            <children>
+                <ImageView fx:id="storeImage" fitHeight="29.0" fitWidth="27.0">
+                    <image>
+                        <Image url="@Shop.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="storeLabel" text="Store" textFill="#676767">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+            </children>
+        </VBox>
+        <VBox fx:id="mePane" layoutX="297.0" layoutY="545.0" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+            <children>
+                <ImageView fx:id="meImage" fitHeight="23.0" fitWidth="23.0">
+                    <image>
+                        <Image url="@Setting.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="meLabel" text="Me" textFill="#676767">
+                    <font>
+                        <Font size="10.0" />
+                    </font></Label>
+            </children>
+        </VBox>
+        <Label layoutX="290.0" layoutY="25.0" opacity="0.71" prefHeight="47.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic Bold" size="39.0" />
+            </font>
+        </Label>
+        <VBox fx:id="redeemPane" layoutX="99.0" layoutY="545.0" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+            <children>
+                <ImageView fx:id="redeemImage" fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Gift.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="redeemLabel" text="Redeem" textFill="#676767">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Label layoutX="14.0" layoutY="102.0" prefHeight="40.0" prefWidth="248.0" text="Fashion" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="142.0" text="H&amp;N" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="17.0" layoutY="423.0" text=" Location: L1-53" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="100.0" fitWidth="138.0" layoutX="20.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@h&amp;n.PNG" />
+            </image>
+        </ImageView>
+        <Label layoutX="15.0" layoutY="443.0" text=" Phone: 03-80226579" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="315.0" text=" Opening hours: 10am – 10pm " textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="349.0" text="G3000" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="47.0" fitWidth="138.0" layoutX="20.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@g3000.PNG" />
+            </image>
+        </ImageView>
+        <Label layoutX="14.0" layoutY="278.0" prefWidth="138.0" text=" Location: L2-22" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="296.0" text=" Phone: 03-80229732 " textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="12.0" layoutY="463.0" prefHeight="20.0" prefWidth="222.0" text=" Opening hours: 10am - 10pm " textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="backButton" fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="31.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

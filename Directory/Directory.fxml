@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(#141e30, #243b55);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Directory.DirectoryController">
+   <children>
+      <Label layoutX="290.0" layoutY="25.0" opacity="0.71" prefHeight="47.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="39.0" />
+         </font>
+      </Label>
+      <HBox alignment="BASELINE_CENTER" layoutY="546.0" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #282828;">
+         <children>
+            <VBox fx:id="homePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="homeImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="homeLabel" text="Main Page" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="redeemPane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="redeemImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Gift.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="redeemLabel" text="Redeem" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="storePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="storeImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Shop.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="storeLabel" text="Store" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="mePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="meImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Setting.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="meLabel" text="Me" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <JFXButton fx:id="bookbutton" contentDisplay="TOP" layoutY="259.0" onAction="#clickon" prefHeight="122.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.1);" text="Book Store" textFill="#b8b7b7">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@book.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="fbbutton" contentDisplay="TOP" layoutX="200.0" layoutY="259.0" onAction="#clickon" prefHeight="122.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.5);" text="F&amp;B">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@food.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="fashionbutton" contentDisplay="TOP" layoutY="381.0" onAction="#clickon" prefHeight="122.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.5);" text="Fashion">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fashion.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="superbutton" contentDisplay="TOP" layoutX="200.0" layoutY="381.0" onAction="#clickon" prefHeight="122.0" prefWidth="200.0" style="-fx-background-color: rgba(255,255,255,0.1);" text="Supermarket" textFill="#b8b7b7">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@supermarket.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane layoutY="118.0" prefHeight="96.0" prefWidth="400.0" style="-fx-background-color: #2F4562; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="14.0" prefHeight="47.0" prefWidth="293.0" text="Jason Lee Hong Jie" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="pointLabel" layoutX="13.0" layoutY="39.0" prefHeight="46.0" prefWidth="161.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="39.0" />
+               </font>
+            </Label>
+            <Label layoutX="181.0" layoutY="53.0" text="points" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@menu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
