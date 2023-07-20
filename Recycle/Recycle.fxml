@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Recycle.RecycleController">
+   <children>
+      <AnchorPane fx:id="pane" prefHeight="592.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(#09203f, #537895);">
+         <children>
+            <Label layoutX="290.0" layoutY="25.0" opacity="0.71" prefHeight="47.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="39.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" layoutX="1.0" layoutY="69.0" prefHeight="477.0" prefWidth="398.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
+               <content>
+                  <AnchorPane layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="875.0" prefWidth="398.0" style="-fx-background-color: transparent; -fx-background: transparent;">
+                     <children>
+                        <ImageView fitHeight="232.0" fitWidth="226.0" layoutX="87.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" translateY="50.0">
+                           <image>
+                              <Image url="@metalStraw.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="31.0" text="Stainless Steel Metal Drinking Straw Set" textFill="WHITE" translateY="50.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="264.0" text="-Diameter: 0.24 inch " translateY="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="296.0" prefHeight="20.0" prefWidth="180.0" text="-Length: 8.5/10.5 inch long" translateY="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="326.0" text="-Freebies: 1 carrying case + 2 cleaning brushes " translateY="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="redeemStraw" layoutX="155.0" layoutY="378.0" onAction="#redeem" style="-fx-background-color: black;" text="REDEEM" textFill="#ffef0b" translateY="50.0">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="56.0" layoutY="357.0" text="-Points required : 100 " translateY="50.0">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="149.5" layoutY="437.0" text="Recycle Bag" textFill="WHITE" translateY="50.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="217.0" fitWidth="226.0" layoutX="85.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true" translateY="50.0">
+                           <image>
+                              <Image url="@recycleBag.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="56.0" layoutY="684.0" text="-Materials: Cotton canvas, ink" translateY="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="713.0" text="-Size: 1 gallon" translateY="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="741.0" text="-Points required : 100 " translateY="50.0">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="redeemBag" layoutX="155.0" layoutY="761.0" onAction="#redeem" style="-fx-background-color: black;" text="REDEEM" textFill="#ffef0b" translateY="50.0">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="31.0" layoutY="16.0" prefHeight="35.0" prefWidth="225.0" text="Eco Friendly Items " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <HBox alignment="BASELINE_CENTER" layoutY="546.0" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #282828;">
+               <children>
+                  <VBox fx:id="homePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="homeImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@home.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="homeLabel" text="Main Page" textFill="#8f8c8c">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="redeemPane" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="redeemImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@GiftFoc.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="redeemLabel" text="Redeem" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="storePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="storeImage" fitHeight="28.0" fitWidth="27.0">
+                           <image>
+                              <Image url="@Shop.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="storeLabel" text="Store" textFill="#8f8c8c">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="mePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="meImage" fitHeight="28.0" fitWidth="27.0">
+                           <image>
+                              <Image url="@Setting.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="meLabel" text="Me" textFill="#8f8c8c">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <ImageView fx:id="backButton" fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="32.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

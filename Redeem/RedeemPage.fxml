@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(#09203f, #537895);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Redeem.RedeemPage">
+   <children>
+      <Label layoutX="290.0" layoutY="25.0" opacity="0.71" prefHeight="47.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="39.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="6.0" layoutY="118.0" prefHeight="428.0" prefWidth="388.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="714.0" prefWidth="400.0">
+               <children>
+                  <JFXButton fx:id="ecoButton" alignment="CENTER" buttonType="RAISED" defaultButton="true" layoutX="-3.0" layoutY="3.0" onAction="#redeemCat" prefHeight="178.0" prefWidth="400.0" style="-fx-border-color: black; -fx-border-width: 1px 0px 0px 0px;" text="Eco Friendly Items" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Curlz MT" size="30.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="99.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@recycle.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="techButton" alignment="CENTER" layoutX="-2.0" layoutY="181.0" onAction="#redeemCat" prefHeight="178.0" prefWidth="400.0" style="-fx-border-color: black; -fx-border-width: 1px 0px 0px 0px;" text="Technology" textFill="WHITE">
+                     <font>
+                        <Font name="Curlz MT" size="30.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="88.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@phone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="houseButton" alignment="CENTER" layoutX="-2.0" layoutY="359.0" onAction="#redeemCat" prefHeight="178.0" prefWidth="400.0" style="-fx-border-color: black; -fx-border-width: 1px  0px 0px 0px;" text="Household Appliances" textFill="WHITE">
+                     <font>
+                        <Font name="Curlz MT" size="30.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="111.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@microwave.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="specialButton" alignment="CENTER" layoutX="-3.0" layoutY="536.0" onAction="#redeemCat" prefHeight="178.0" prefWidth="400.0" style="-fx-border-color: black; -fx-border-width: 1px 0px 1px 0px;" text="Special Prize" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="102.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@WeddingGift.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Curlz MT" size="30.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <HBox alignment="BASELINE_CENTER" layoutY="546.0" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #282828;">
+         <children>
+            <VBox fx:id="homePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="homeImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="homeLabel" text="Main Page" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="redeemPane" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="redeemImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@GiftFoc.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="redeemLabel" text="Redeem" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="storePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="storeImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Shop.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="storeLabel" text="Store" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="mePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="meImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Setting.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="meLabel" text="Me" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Directory/menu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="367.0" style="-fx-background-color: linear-gradient(#141e30, #243b55);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Supermarket.SupermarketController">
+   <children>
+      <Label layoutX="290.0" layoutY="25.0" opacity="0.71" prefHeight="47.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="102.0" prefHeight="40.0" prefWidth="248.0" text="Supermarket " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="142.0" text="Carrefive" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="180.0" layoutX="9.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@carrefive.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="260.0" />
+      <Label layoutX="14.0" layoutY="260.0" />
+      <Label layoutX="5.0" layoutY="306.0" text=" Opening hours: 10am – 11pm " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="250.0" prefWidth="138.0" text=" Location: LG-30" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="278.0" text=" Phone: 03-56376222 " textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="BASELINE_CENTER" layoutY="556.0" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #282828;">
+         <children>
+            <VBox fx:id="homePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="homeImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@home.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="homeLabel" text="Main Page" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="redeemPane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="redeemImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Gift.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="redeemLabel" text="Redeem" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="storePane" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="storeImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Shop.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="storeLabel" text="Store" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="mePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+               <children>
+                  <ImageView fx:id="meImage" fitHeight="28.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@Setting.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="meLabel" text="Me" textFill="#8f8c8c">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <ImageView fx:id="backButton" fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="32.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

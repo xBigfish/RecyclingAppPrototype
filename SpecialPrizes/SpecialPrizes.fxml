@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="parentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpecialPrizes.SpecialPrizesController">
+   <children>
+      <AnchorPane fx:id="pane" minHeight="-Infinity" prefHeight="592.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(#09203f, #537895);">
+         <children>
+            <Label layoutX="290.0" layoutY="25.0" opacity="0.71" prefHeight="47.0" prefWidth="99.0" text="MALL" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="39.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutY="85.0" prefHeight="444.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1094.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-background: transparent;">
+                     <children>
+                        <ImageView fitHeight="219.0" fitWidth="286.0" layoutX="57.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" style="-fx-line-spacing: 10;">
+                           <image>
+                              <Image url="@special1.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="31.0" layoutY="51.0" prefHeight="27.0" style="-fx-line-spacing: 10;" text=" 5 days 4 nights to Bangkok and London" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="329.0" style="-fx-line-spacing: 10;" text="-Plane ticket worth: (RM 6541 – London&#10; RM 727 - Bangkok)" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="redeem2500" layoutX="155.0" layoutY="459.0" onAction="#redeem" style="-fx-background-color: black;" text="REDEEM" textFill="#ffef0b">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="56.0" layoutY="389.0" lineSpacing="10.0" style="-fx-line-spacing: 10;" text="-Food and hospitality expenses are excluded." textFill="WHITE">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.5" layoutY="519.0" text="2 days 1 night stay in &#10;SHANGRI-LA Hotels and Resorts " textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="238.0" fitWidth="254.0" layoutX="73.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@special2.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="56.0" layoutY="998.0" style="-fx-line-spacing: 10;" text="Points required : 1300" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="redeem1300" layoutX="155.0" layoutY="1034.0" onAction="#redeem" style="-fx-background-color: black;" text="REDEEM" textFill="#ffef0b">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="56.0" layoutY="419.0" style="-fx-line-spacing: 10;" text="Points required : 2500 " textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="16.0" prefHeight="35.0" style="-fx-line-spacing: 10;" text="Special Prizes" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="122.5" layoutY="583.0" text="(Royal Suite Room)" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="802.0" prefHeight="20.0" prefWidth="334.0" text="-1 king size double bed and 1 queen size double bed.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="831.0" prefHeight="40.0" prefWidth="313.0" text="-Oversized luxury suite with separate living room, large dining and work areas." wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="877.0" prefHeight="40.0" prefWidth="310.0" text="-Bathroom with Jacuzzi, glass-enclosed shower, designer bath amenities and television." wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="921.0" prefHeight="40.0" prefWidth="314.0" text="-Access to the exclusive Horizon Club Lounge with its full range of privileges." wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="964.0" prefHeight="30.0" prefWidth="330.0" text="-High speed Wi-Fi." wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ImageView fx:id="backButton" fitHeight="45.0" fitWidth="37.0" layoutX="14.0" layoutY="32.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="BASELINE_CENTER" layoutY="546.0" prefHeight="46.0" prefWidth="400.0" style="-fx-background-color: #282828;">
+               <children>
+                  <VBox fx:id="homePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="homeImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Recycle/home.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="homeLabel" text="Main Page" textFill="#8f8c8c">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="redeemPane" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="redeemImage" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Recycle/GiftFoc.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="redeemLabel" text="Redeem" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="storePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="storeImage" fitHeight="28.0" fitWidth="27.0">
+                           <image>
+                              <Image url="@../Recycle/Shop.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="storeLabel" text="Store" textFill="#8f8c8c">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="mePane" onMouseClicked="#mouseClick" onMouseEntered="#mouseEnter" onMouseExited="#mouseExit" prefHeight="47.0" prefWidth="99.0" style="-fx-background-color: #282828; -fx-alignment: center;">
+                     <children>
+                        <ImageView fx:id="meImage" fitHeight="28.0" fitWidth="27.0">
+                           <image>
+                              <Image url="@../Recycle/Setting.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="meLabel" text="Me" textFill="#8f8c8c">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
